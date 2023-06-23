@@ -4,7 +4,7 @@ from flask import Flask
 mydb = mysql.connector.connect(
     host="dbtest.cg0s9ns2wzns.us-east-1.rds.amazonaws.com",
     user="admin",
-    password="g0j;Y]YO6.%()G,to}G6"
+    password="sanitized"
 )
 
 app = Flask(__name__)
