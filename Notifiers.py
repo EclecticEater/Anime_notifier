@@ -1,3 +1,5 @@
+#note this is not my latest script. had to swap libraries due to issues with C code in Lambda
+
 import requests
 from bs4 import BeautifulSoup
 import mysql.connector
@@ -13,7 +15,7 @@ r = BeautifulSoup(r.text, 'lxml')
 
 body = r.body
 
-recently_updated = body.contents[5].contents[7].contents[1].contents[5]
+recently_updated = body.contents[5].contents[7].contents[1].contents[3]
 
 swiper_wrapper = recently_updated.contents[3].contents[1].contents[3].contents[1]
 
